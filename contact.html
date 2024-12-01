@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+                <a href="index.html"><img src="LOGO-fst-new.png" alt=""></a>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="information.html">INFORMATION</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul> 
+                <ul>
+                    <li><a href="#"><span>Universitas Nurul Huda</span></a></li>
+                    <li class="hideonmobile"> <a href="index.html">HOME</a></li>
+                    <li class="hideonmobile"> <a href="about.html">ABOUT</a></li>
+                    <li class="hideonmobile"> <a href="information.html">INFORMATION</a></li>
+                    <li class="hideonmobile"> <a href="blog.html">BLOG</a></li>
+                    <li class="hideonmobile"> <a href="contact.html">CONTACT</a></li>
+                    <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>     
+        </nav>
+        <h1>CONTACT US</h1>
+    </section>      
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4048.3872798889147!2d104.4540054842741!3d-4.251662891309684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3903ba82324c89%3A0x29ef2c05b1ecbb2!2sUniversitas%20Nurul%20Huda%20-%20Kampus%20A!5e0!3m2!1sid!2sid!4v1724256384954!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="cta-us">
+        <div class="row">
+            <div class="cta-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Sumatera Selatan</h5>
+                        <p>OKU Timur, Buay Madang, Sukaraja</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>090909099</h5>
+                        <p>Senin-Jumat, 08:00-16:00</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>infunuha@.ac.id</h5>
+                        <p>unuha@gmail.com</p>
+                    </span>
+                </div>
+            </div>
+            <div class="cta-col">
+                <form action="handle.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" 
+                    required>
+                    <input type="text" name="email" placeholder="Enter Your Email" 
+                    required>
+                    <input type="text" name="addres" placeholder="Enter Your Addres" 
+                    required>
+                    <textarea rows="10" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="red-btn">SEND MESSAGE </button>
+                </form>
+            </div>
+        </div>
+    
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis velit est ea tenetur excepturi quo modi, aperiam illo repellat pariatur quam placeat veritatis magnam.</p>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-envelope icon"></i>
+        </div>
+        <p>Copyright by INFORMATIKA</p>
+    </section>
+
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html> 

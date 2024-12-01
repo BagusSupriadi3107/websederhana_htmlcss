@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+                <a href="index.html"><img src="LOGO-fst-new.png" alt=""></a>
+                <ul class="sidebar">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="information.html">INFORMATION</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul> 
+                <ul>
+                    <li><a href="#"><span>Universitas Nurul Huda</span></a></li>
+                    <li class="hideonmobile"> <a href="index.html">HOME</a></li>
+                    <li class="hideonmobile"> <a href="about.html">ABOUT</a></li>
+                    <li class="hideonmobile"> <a href="information.html">INFORMATION</a></li>
+                    <li class="hideonmobile"> <a href="blog.html">BLOG</a></li>
+                    <li class="hideonmobile"> <a href="contact.html">CONTACT</a></li>
+                    <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>     
+        </nav>
+        <h1>ABOUT US</h1>
+    </section>      
+    <section class="aboutus">
+        <div class="row">
+            <div class="about-col">
+                <h1>Hubungi Kami</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, enim expedita reprehenderit maxime, velit corporis ducimus, eaque voluptates dolore neque quam laboriosam beatae hic nemo tempore sed dolor repellendus amet iste molestias perferendis. Vel, ipsa.</p>
+                <a href="" class="red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="diskusi.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis velit est ea tenetur excepturi quo modi, aperiam illo repellat pariatur quam placeat veritatis magnam.</p>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-envelope icon"></i>
+        </div>
+        <p>Copyright by INFORMATIKA</p>
+    </section>
+
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html> 
